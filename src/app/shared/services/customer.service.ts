@@ -13,10 +13,10 @@ export class CustomerService {
    
    }
    getCustomers():Observable<any>{//http://localhost:3000/customers
-   return this.httpClient.get('http://localhost:3000/customers');
+   return this.httpClient.get('https://my-json-server.typicode.com/HaidiGalal/RouteTechSummitTask/customers');
    }
    getCustomersTranscations():Observable<any>{//http://localhost:3000/transactions
-    return this.httpClient.get('http://localhost:3000/transactions');
+    return this.httpClient.get('https://my-json-server.typicode.com/HaidiGalal/RouteTechSummitTask/transactions');
     }
 
     getCombinedData(): Observable<{ customer: Customers, transactions: Transactions[] }[]> {
